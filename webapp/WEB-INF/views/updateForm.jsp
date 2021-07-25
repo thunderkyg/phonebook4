@@ -12,7 +12,7 @@
 		수정화면 입니다. 아래 항목을 수정하고 "수정" 버튼을 클릭하세요
 	</p>
 	
-		<form action="./update" method="post">
+		<form action="${pageContext.request.contextPath}/pb/update" method="post">
 			<input type="hidden" name="personId" value="${requestScope.personVo.personId}">
 			이름(name): <input type="text" name="name" value="${requestScope.personVo.name}"> <br>
 			핸드폰(hp): <input type="text" name="hp" value="${requestScope.personVo.hp}"> <br>
